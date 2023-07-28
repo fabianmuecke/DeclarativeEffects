@@ -7,3 +7,5 @@ DerivedData/
 .swiftpm/config/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
+Examples/DeclarativeEffectsExample/DeclarativeEffectsExample/Generated
+/Example/DeclarativeEffectsExample/DeclarativeEffectsExample.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved

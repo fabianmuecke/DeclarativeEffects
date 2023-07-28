@@ -35,6 +35,12 @@ public extension SimpleRequestsProtocol {
     var requestsByIDs: [Request.ID: Request] { requests.elementsByIDs }
 }
 
+public extension SimpleDeclarativeEffectsReducerProtocol where State: SimpleRequestsProtocol, State.Request == Request {
+    static func effects(for state: State) -> Set<Request> {
+        state.requests
+    }
+}
+
 public extension DeclarativeEffectsReducer where State: SimpleRequestsProtocol, State.Request == Request {
     convenience init(
         reduce: @escaping (inout State, Action) -> Void,
